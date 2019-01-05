@@ -1,0 +1,32 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "cd client && npm start",
+    "server": "node server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "commander": "^2.19.0",
+    "connect-cors": "^0.5.6",
+    "content-disposition": "^0.5.2",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "graph-data-structure": "^1.8.0",
+    "mongodb": "^3.1.10",
+    "mongoose": "^5.3.15",
+    "node-outlook": "^1.1.8",
+    "q": "^1.5.1",
+    "recorder-js": "^1.0.7",
+    "simple-oauth2": "^2.2.1"
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1"
+  }
+}
